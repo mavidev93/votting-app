@@ -7,12 +7,10 @@ import reportWebVitals from "./reportWebVitals";
 //third party
 import { BrowserRouter } from "react-router-dom";
 
-//app
-import MainRoute from "./Rooter/MainRoute";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MainRoute />
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

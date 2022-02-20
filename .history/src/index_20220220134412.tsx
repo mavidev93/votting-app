@@ -12,7 +12,7 @@ import MainRoute from "./Rooter/MainRoute";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MainRoute />
+      <MainRoute />={" "}
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

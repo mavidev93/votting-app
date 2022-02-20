@@ -4,16 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+
 //third party
 import { BrowserRouter } from "react-router-dom";
 
 //app
-import MainRoute from "./Rooter/MainRoute";
+import MainRoute from './Rooter/MainRoute'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MainRoute />
-    </BrowserRouter>
+=    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
