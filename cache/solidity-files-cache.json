@@ -1,43 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\mavi\\Desktop\\projects\\votting-app\\contracts\\Greeter.sol": {
-      "lastModificationDate": 1645260136584,
-      "contentHash": "54c28c84e5277b35b8c8329ce9755dae",
-      "sourceName": "contracts/Greeter.sol",
-      "solcConfig": {
-        "version": "0.8.4",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Greeter"
-      ]
-    },
     "C:\\Users\\mavi\\Desktop\\projects\\votting-app\\node_modules\\hardhat\\console.sol": {
       "lastModificationDate": 1645260136551,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
@@ -71,6 +34,43 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "C:\\Users\\mavi\\Desktop\\projects\\votting-app\\contracts\\VotingProposals.sol": {
+      "lastModificationDate": 1645605634911,
+      "contentHash": "c7a0f9f217d80c77bf1e685565f8169d",
+      "sourceName": "contracts/VotingProposals.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "VotingProposals"
       ]
     }
   }
