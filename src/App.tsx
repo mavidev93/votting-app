@@ -9,8 +9,8 @@ function App() {
   let navLinkClassNames = "p-2  rounded inline-block ";
   let activeNavLinkClassNames = "shadow-md bg-slate-50";
   return (
-    <div className="App">
-      <nav className="bg-slate-200 p-2">
+    <div className="App font-regular  tracking-wide	">
+      <nav className="bg-slate-100 p-2">
         <NavLink
           // className={(isActive) => `${isActive ? "bg-slate-300" : "bg-black	"}`}
           className={({ isActive }) =>
@@ -33,7 +33,7 @@ function App() {
           Admin
         </NavLink>
       </nav>
-  
+
       <Outlet />
     </div>
   );

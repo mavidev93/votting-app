@@ -39,7 +39,7 @@ function SendProposal() {
   };
 
   return (
-    <div className="w-64 md:w-64 lg:w-96 mx-auto">
+    <div className="w-64 md:w-96 lg:w-64 mx-auto my-2">
       <form
         onSubmit={handleSend}
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"

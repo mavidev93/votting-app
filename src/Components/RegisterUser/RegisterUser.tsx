@@ -23,6 +23,7 @@ function RegisterUser() {
     console.log(ethers.utils.isAddress(addressVal));
     if (ethers.utils.isAddress(addressVal)) {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
+
       //request from metamask to user account
       await provider.send("eth_requestAccounts", []);
 
@@ -41,23 +42,6 @@ function RegisterUser() {
     }
   };
 
-  const handleRetriveUser = async () => {
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    await provider.send("eth_requestAccounts", []);
-    const votingProposalsWithProvider = new ethers.Contract(
-      votingProposalsAddress,
-      VotingProposals.abi,
-      provider
-    );
-    const user = await votingProposalsWithProvider.retriveUser(
-      "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
-    );
-    console.log(user);
-
-    console.log(user.userAddress);
-  };
-  
-
   const handleAddress = (event) => {
     setAddressVal(event.target.value);
   };
@@ -65,7 +49,9 @@ function RegisterUser() {
   return (
     <div>
       <div className="w-64 md:w-64 lg:w-96 mx-auto">
-        
+        <h2 className="text-center mt-3 font-bold font-header">
+          Register User
+        </h2>
         <form
           onSubmit={handleRegister}
           className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
@@ -94,9 +80,6 @@ function RegisterUser() {
             >
               Register Address
             </button>
-
-            {/* #delete next */}
-            <button onClick={handleRetriveUser}>retrive user</button>
           </div>
         </form>
       </div>
