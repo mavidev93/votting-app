@@ -37,8 +37,8 @@
       ]
     },
     "C:\\Users\\mavi\\Desktop\\projects\\votting-app\\contracts\\VotingProposals.sol": {
-      "lastModificationDate": 1645883506062,
-      "contentHash": "bcd886b8021a0386eaab205e21bd7f29",
+      "lastModificationDate": 1646571520136,
+      "contentHash": "450d3b0c8f5ed2a5ae863a9c03dcc1ce",
       "sourceName": "contracts/VotingProposals.sol",
       "solcConfig": {
         "version": "0.8.4",
